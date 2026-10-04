@@ -79,3 +79,29 @@ int pula = lbMonety % lbBohaterzy;
 
 Console.WriteLine($"Aby było równo każdy bohater dostanie {podzial} monet. W puli zostanie {pula} monety.");
 
+//zad 11
+
+Console.Write("\nZadanie 11\n");
+
+Console.Write("Podaj wartość podstawowych obrażeń broni: ");
+string obr = Console.ReadLine();
+int wartObr = int.Parse(obr);
+
+Console.Write("Podaj premię do siły: ");
+string premia = Console.ReadLine();
+int wartPremii = int.Parse(premia);
+
+int zwykly = wartObr + wartPremii;
+Console.WriteLine($"Wartość twojego zwykłego ataku to: {zwykly}");
+
+int specjalny = 2 * zwykly;
+Console.WriteLine($"Wartość twojego ataku specjalnego to: {specjalny}");
+
+int ultraspecjalny = (3 * zwykly) + specjalny;
+Console.WriteLine($"Twój super specjalny atak wynosi: {ultraspecjalny}");
+
+Console.WriteLine("\nRaport obliczeń:");
+Console.WriteLine("Aby obliczyc zwykły atak dodałam do siebie \nwartość podstawowych obrażeń broni i premię do siły");
+Console.WriteLine("Aby obliczyć specjlany atak pomnożyłam zwykły atak * 2");
+Console.WriteLine("Aby obliczyć super specjalny atak najpierw pomnożyłam zwykły * 3 \nmając to w nawiasie. Do tego dodałam jeden specjalny");
+
