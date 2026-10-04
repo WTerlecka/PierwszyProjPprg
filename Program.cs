@@ -31,6 +31,17 @@ string imie2 = Console.ReadLine();
 Console.Write("Jaki jest twój ulubiony kolor: ");
 string kolor = Console.ReadLine();
 
-Console.WriteLine($"\nCześć, {imie}! {kolor} to jest świetny kolor.");
+Console.WriteLine($"\nCześć, {imie2}! {kolor} to jest świetny kolor.");
 
+//Zad 4
 
+Console.Write("\nZadanie4\n");
+
+Console.Write("Ile masz lat: ");
+string odp = Console.ReadLine();
+int wiek2 = int.Parse(odp);
+
+int wiekZaRok = wiek2 + 1;
+int wiekZa5Lat = wiek2 + 5;
+
+Console.WriteLine($"Teraz masz: {wiek2} lat, za rok bedziesz mieć: {wiekZaRok} lat a za 5 lat: {wiekZa5Lat} lat.");
