@@ -121,14 +121,14 @@ int dniWyprawy = int.Parse(dni);
 
 Console.Write("Ile zdobyłeś punktów doświadczenia: ");
 string pkt = Console.ReadLine();
-int lbPkt = int.Parse(pkt);
+double lbPkt = double.Parse(pkt);
 
 Console.Write("Ile zdobyłeś złota: ");
 string zloto = Console.ReadLine();
-int lbZlota = int.Parse(zloto);
+double lbZlota = double.Parse(zloto);
 
-double srPkt = (double)lbPkt / dniWyprawy;
-double srZloto = (double)lbZlota / dniWyprawy;
+double srPkt = lbPkt / dniWyprawy;
+double srZloto = lbZlota / dniWyprawy;
 
 Console.WriteLine($"Bohater o imieniu {nazwaBohatera} odwiedził kraine {nazwaKrainy}");
 Console.WriteLine($"Zdobył on {lbPkt} punktów doświadczenia i {lbZlota} sztuk złota podczas {dniWyprawy} dni wyprawy");
