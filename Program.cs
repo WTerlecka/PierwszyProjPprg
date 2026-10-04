@@ -105,3 +105,32 @@ Console.WriteLine("Aby obliczyc zwykły atak dodałam do siebie \nwartość pods
 Console.WriteLine("Aby obliczyć specjlany atak pomnożyłam zwykły atak * 2");
 Console.WriteLine("Aby obliczyć super specjalny atak najpierw pomnożyłam zwykły * 3 \nmając to w nawiasie. Do tego dodałam jeden specjalny");
 
+//zad 12
+
+Console.Write("\nZadanie 12\n");
+
+Console.Write("Podaj nazwę bohatera: ");
+string nazwaBohatera = Console.ReadLine();
+
+Console.Write("Podaj nazwę krainy: ");
+string nazwaKrainy = Console.ReadLine();
+
+Console.Write("Ile dni trwała twoja wyprawa: ");
+string dni = Console.ReadLine();
+int dniWyprawy = int.Parse(dni);
+
+Console.Write("Ile zdobyłeś punktów doświadczenia: ");
+string pkt = Console.ReadLine();
+int lbPkt = int.Parse(pkt);
+
+Console.Write("Ile zdobyłeś złota: ");
+string zloto = Console.ReadLine();
+int lbZlota = int.Parse(zloto);
+
+double srPkt = (double)lbPkt / dniWyprawy;
+double srZloto = (double)lbZlota / dniWyprawy;
+
+Console.WriteLine($"Bohater o imieniu {nazwaBohatera} odwiedził kraine {nazwaKrainy}");
+Console.WriteLine($"Zdobył on {lbPkt} punktów doświadczenia i {lbZlota} sztuk złota podczas {dniWyprawy} dni wyprawy");
+Console.WriteLine($"Średnio to {srPkt} punktów doświadczenia jednego dnia");
+Console.WriteLine($"Oraz {srZloto} sztuk złota jednego dnia");
