@@ -1,4 +1,5 @@
-﻿// Zad1
+﻿/*
+// Zad1
 
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks.Dataflow;
@@ -24,7 +25,7 @@ Console.WriteLine("===================");
 
 //zad3 
 
-Console.Write("\nZadanie3\n");
+Console.Write("\nZadanie 3\n");
 
 Console.Write("Jak masz na imie: ");
 string imie2 = Console.ReadLine();
@@ -36,7 +37,7 @@ Console.WriteLine($"\nCześć, {imie2}! {kolor} to jest świetny kolor.");
 
 //Zad 4
 
-Console.Write("\nZadanie4\n");
+Console.Write("\nZadanie 4\n");
 
 Console.Write("Ile masz lat: ");
 string odp = Console.ReadLine();
@@ -47,9 +48,10 @@ int wiekZa5Lat = wiek2 + 5;
 
 Console.WriteLine($"Teraz masz: {wiek2} lat, za rok bedziesz mieć: {wiekZaRok} lat a za 5 lat: {wiekZa5Lat} lat.");
 
+*/
 //Zad9
 
-Console.Write("\nZadanie9\n");
+Console.Write("\nZadanie 9\n");
 
 Console.Write("Podaj czas w sekundach: ");
 string odp2 = Console.ReadLine();
@@ -59,3 +61,21 @@ int minuty = czas / 60;
 int sekundy = czas % 60;
 
 Console.WriteLine($"{czas} sekund to {minuty} minuty i {sekundy} sekundy.");
+
+//zad 10
+
+Console.Write("\nZadanie 10\n");
+
+Console.Write("Ilu bohaterow macie w druzynie: ");
+string bohaterzy = Console.ReadLine();
+int lbBohaterzy = int.Parse(bohaterzy);
+
+Console.Write("A ile zdobyliście monet: ");
+string monety = Console.ReadLine();
+int lbMonety = int.Parse(monety);
+
+int podzial = lbMonety / lbBohaterzy;
+int pula = lbMonety % lbBohaterzy;
+
+Console.WriteLine($"Aby było równo każdy bohater dostanie {podzial} monet. W puli zostanie {pula} monety.");
+
