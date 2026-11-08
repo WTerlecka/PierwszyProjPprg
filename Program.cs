@@ -35,8 +35,8 @@ for(int parzyste = 0; parzyste <= 20; parzyste += 2)
     Console.Write($"{parzyste} ");
 }
 Console.WriteLine("\nStart!");
-//Zadanie 2
 
+//Zadanie 2
 
 Console.WriteLine("Zadanie 2");
 
@@ -57,3 +57,40 @@ for (int i = 1; i <= dniWyprawy; i++)
 }
 Console.WriteLine($"\nŁącznie znaleziono: {sumaZłota} sztuk złota");
 Console.WriteLine($"Dni z wynikiem powyżej 10: {udaneDni}");
+
+//Zadanie 3
+
+Console.WriteLine("\nZadanie 3");
+
+
+//zadanie 4
+
+Console.WriteLine("\nZadanie 4");
+int liczbaTur;
+
+while (true)
+{
+    Console.Write("Podaj liczbę tur od 1 do 10: ");
+    bool czyLiczba = int.TryParse(Console.ReadLine(), out liczbaTur);
+
+    if (!czyLiczba)
+    {
+        Console.WriteLine("Wpisz liczbę całkowitą.");
+        continue;
+    }
+
+    if (liczbaTur < 1 || liczbaTur > 10)
+    {
+        Console.WriteLine("Liczba musi należeć do zakresu 1–10.");
+        continue;
+    }
+
+    break;
+}
+
+Console.WriteLine($"Rozpoczynam grę na {liczbaTur} tur.");
+
+for (int i = 1; i <= liczbaTur; i++)
+{
+    Console.Write($"{i} ");
+}
