@@ -24,7 +24,6 @@ do
     lb3++;
 }
 while (lb3 <= 10);
-
 Console.WriteLine("\nMalejąco: ");
 for(int malejaco = 10; malejaco > 0; malejaco--)
 {
@@ -40,3 +39,21 @@ Console.WriteLine("\nStart!");
 
 
 Console.WriteLine("Zadanie 2");
+
+Console.Write("Ile dni trwała wyprawa(1-7): ");
+int dniWyprawy = int.Parse(Console.ReadLine());
+int sumaZłota = 0;
+int udaneDni = 0;
+for (int i = 1; i <= dniWyprawy; i++)
+{
+    Console.Write($"Złoto w dniu {i}: ");
+    int złoto = int.Parse(Console.ReadLine());
+    sumaZłota += złoto;
+
+    if (złoto > 10)
+    {
+        udaneDni ++;
+    }
+}
+Console.WriteLine($"\nŁącznie znaleziono: {sumaZłota} sztuk złota");
+Console.WriteLine($"Dni z wynikiem powyżej 10: {udaneDni}");

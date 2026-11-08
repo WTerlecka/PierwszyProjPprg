@@ -1,8 +1,4 @@
 // Zad1
-
-using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks.Dataflow;
-
 Console.WriteLine("\nZadanie1\nCześć");
 Console.WriteLine("Wiktoria");
 Console.Write("Wydział ");
