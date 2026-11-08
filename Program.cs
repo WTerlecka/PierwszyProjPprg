@@ -58,11 +58,6 @@ for (int i = 1; i <= dniWyprawy; i++)
 Console.WriteLine($"\nŁącznie znaleziono: {sumaZłota} sztuk złota");
 Console.WriteLine($"Dni z wynikiem powyżej 10: {udaneDni}");
 
-//Zadanie 3
-
-Console.WriteLine("\nZadanie 3");
-
-
 //zadanie 4
 
 Console.WriteLine("\nZadanie 4");
@@ -93,4 +88,50 @@ Console.WriteLine($"Rozpoczynam grę na {liczbaTur} tur.");
 for (int i = 1; i <= liczbaTur; i++)
 {
     Console.Write($"{i} ");
+}
+
+//Zadanie 3
+int liczbaLinijek;
+Console.WriteLine("\nZadanie 3");
+
+while(true)
+{
+    Console.Write("Podaj ile linijek ma miec choinka(2-10): ");
+    bool czyLiczba2 = int.TryParse(Console.ReadLine(), out liczbaLinijek);
+
+    if (!czyLiczba2)
+    {
+        Console.Write("Wpisz liczbę całkowitą.");
+        continue;
+    }
+
+    if (liczbaLinijek < 2 || liczbaLinijek > 10)
+    {
+        Console.Write("Liczba musi należeć do zakresu 2–10.");
+        continue;
+    }
+
+    break;
+}
+
+for (int i = 1;i <= liczbaLinijek; i++)
+{
+    for (int j = 1; j <= liczbaLinijek - i; j++)
+    {
+        Console.Write(" ");
+    }
+    for (int j = 1; j <= 2 * i - 1; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+
+for (int i = 1; i <= 2; i++)
+{
+    for (int j = 1; j <= liczbaLinijek - 1; j++)
+    {
+        Console.Write(" ");
+    }
+    Console.WriteLine("|");
 }
